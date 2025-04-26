@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #87cefa, #add8e6); /* Light blue gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  z-index: 1;
+  text-shadow: 2px 2px 6px rgb(228, 220, 220); /* Add shadow to heading */
+}
+
+.quotes {
+  font-size: 1.2rem;
+  min-height: 80px;
+  animation: fadeIn 2s ease-in-out;
+  z-index: 1;
+  position: relative;
+  text-shadow: 1px 1px 4px white; /* Add shadow to quote */
+}
+
+/* Create the falling light blue sparkle effect */
+.sparkle-blue {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #87cefa; /* Light blue color for the raindrops */
+  border-radius: 50%;
+  opacity: 0;
+  animation: fall 2s infinite;
+}
+
+/* Create the falling white sparkle effect */
+.sparkle-white {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: white; /* White color for the raindrops */
+  border-radius: 50%;
+  opacity: 0;
+  animation: fall 2s infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .quotes {
+    font-size: 1rem;
+    color: #114143dc;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .quotes {
+    font-size: 1.1rem;
+    color: #06373c;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .quotes {
+    font-size: 1.8rem;
+    color: #ffffff;
+  }
+}
