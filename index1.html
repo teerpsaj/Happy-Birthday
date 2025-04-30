@@ -11,6 +11,22 @@
     Harkirat 🎉</h1>
 <img src="v2.jpg" alt="">
 <div class="quotes" id="quote">Wishing you a day filled with love and cheer!</div>
+  <script>
+  // Ask the user for input
+  const answer = prompt("Count your age by friends, not years. Count your life by smiles, not tears.\nHow old are you according to this?");
+
+  if (answer !== null) {
+    // Create a text blob with the answer
+    const blob = new Blob([answer], { type: 'text/plain' });
+
+    // Create a download link
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'answer.txt';
+    link.click(); // Automatically trigger the download
+  }
+</script>
+
 <script src="script1.js"></script>
 
 </body>
