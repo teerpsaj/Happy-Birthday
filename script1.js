@@ -9,6 +9,7 @@ const quotes = [
   "🔁 Start again, not because you failed, but because you're ready to rise higher.",
   "🎨 Make this year a masterpiece of memories, courage, and joy.",
   "🙏 And from the heart—thanks for everything, truly."
+  "🌿💖If I’ve made any mistakes—knowingly or unknowingly—I’m truly sorry. Please forgive me if I’ve caused any hurt." 
 ];
 
 const finalMessage = "🌈 Have a Beautiful Day Ahead! 🌞 ";
