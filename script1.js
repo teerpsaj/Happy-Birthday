@@ -60,4 +60,4 @@ function cycleQuotes() {
   }
 }
 
-const quoteInterval = setInterval(cycleQuotes, 4000);
+const quoteInterval = setInterval(cycleQuotes, 6000);
