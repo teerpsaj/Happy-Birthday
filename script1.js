@@ -8,7 +8,7 @@ const quotes = [
   "🌟 Shine so brightly that this year remembers your light.",
   "🔁 Start again, not because you failed, but because you're ready to rise higher.",
   "🎨 Make this year a masterpiece of memories, courage, and joy.",
-  "🙏 And from the heart—thanks for everything, truly."
+  "🙏 And from the heart—thanks for everything, truly.",
   "🌿💖If I’ve made any mistakes—knowingly or unknowingly—I’m truly sorry. Please forgive me if I’ve caused any hurt." 
 ];
 
@@ -61,4 +61,4 @@ function cycleQuotes() {
   }
 }
 
-const quoteInterval = setInterval(cycleQuotes, 4000);
+const quoteInterval = setInterval(cycleQuotes, 5000);
