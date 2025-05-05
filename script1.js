@@ -1,5 +1,4 @@
 const quotes = [
-  "🎉 Celebrate not the years gone by, but the moments that made you feel truly alive.",
   "😄 Let laughter shape your story and joy carve the path ahead.",
   "📖 Every birthday marks a new chapter—write it boldly and dream without limits.",
   "💖 This year, grow louder in love, stronger in hope, and braver in purpose.",
